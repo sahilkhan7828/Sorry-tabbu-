@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorry Tabbu</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #1a1a2e, #16213e);
+      color: white;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      padding: 20px;
+    }
+    .message {
+      margin-top: 20%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  </style>
+  <script>
+    const correctPassword = "onlyfortabbu";
+    const userInput = prompt("Tabbu, enter your special password:");
+    if (userInput !== correctPassword) {
+      document.write("<h2 style='text-align:center; margin-top: 50vh;'>Access Denied ❌</h2>");
+      throw new Error("Access denied");
+    }
+  </script>
+</head>
+<body>
+  <div class="message">
+    <h2>Sorry Tabbu 🥺</h2>
+    <p>
+      Mujhe pata hai tu gussa hai...<br>
+      Par sach mein, kal bas aankh lag gayi thi.<br>
+      Har din teri baatein meri khushi ka hissa hain.<br>
+      Teri narazgi chubh jaati hai yaar.<br>
+      Please maaf kar de... warna main sach mein udaas ho jaunga 💔
+    </p>
+    <p>— Tera pagal dost</p>
+  </div>
+</body>
+</html>
